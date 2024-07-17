@@ -1,0 +1,10 @@
+services:
+  mysql:
+    container_name: 'guide-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=website'
+      - 'MYSQL_PASSWORD=toor'
+      - 'MYSQL_ROOT_PASSWORD=toor'
+    ports:
+      - '3306:3306'
